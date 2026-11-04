@@ -59,6 +59,32 @@ The script creates two folders next to itself:
 
 Each run overwrites these files.
 
+## Results
+
+These charts come from the run committed to this repo (2019-01-02 to 2026-11-03). They'll change if you re-run the script with a later end date.
+
+| | Bollinger Band (XBI Top 10) | Buy & Hold SPY |
+|---|---|---|
+| Ending value (from $100k) | $157,412 | $335,949 |
+| CAGR | 5.97% | 16.76% |
+| Sharpe ratio | 0.66 | 0.91 |
+| Max drawdown | 12.5% | 33.3% |
+| Closed trades / win rate | 335 / 68% | n/a |
+
+### Equity curve vs. buy-and-hold SPY
+
+![Equity curve of the Bollinger Band strategy vs. buy-and-hold SPY, with a drawdown panel](output/equity_curve.png)
+
+### Bollinger Bands for all 10 stocks (last 252 trading days)
+
+Green triangles mark the strategy's executed buys and red triangles its executed sells.
+
+![Bollinger Bands and executed trades for the XBI top 10 holdings over the last 252 trading days](output/xbi_top10_bands_grid.png)
+
+### Bollinger Bands for all 10 stocks (full period)
+
+![Bollinger Bands and executed trades for the XBI top 10 holdings over the full backtest period](output/xbi_top10_bands_grid_full.png)
+
 ## Configuration
 
 Edit the constants near the top of `Assignment03.py`:
